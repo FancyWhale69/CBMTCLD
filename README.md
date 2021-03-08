@@ -1,3 +1,3 @@
 # CBMTCLD
-A project to help children with learning disabilities created in java.
-![Main](main.jpg)
+##A project to help children with learning disabilities created in java.
+![Main interface](main.jpg)
