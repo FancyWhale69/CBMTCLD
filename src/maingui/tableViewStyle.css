@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 13, 2020, 4:42:39 PM
+    Author     : Me
+*/
+//#fa26a0 new color pink
+.root{
+    -fx-background-color: #eeeeee;//#70c1b3;
+    
+}
+
+.table-view{
+   -fx-background-color: #eeeeee;//#70c1b3;
+   -fx-boarder-color: #000000;//#247ba0;
+   -fx-border-width: 1;
+}
+
+.table-view:focused{
+    -fx-background-color: #eeeeee;//#70c1b3;
+}
+
+.table-view .column-header-background{
+    //#b2dbbf 0%, #70c1b3 100%
+    -fx-background-color: linear-gradient(#eeeeee 0%, #dddddd 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #fa26a0;//#247ba0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #fa26a0;//#247ba0;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #eeeeee;//#b2dbbf;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #cccccc;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #000000;//#005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}

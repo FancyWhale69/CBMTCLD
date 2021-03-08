@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maingui.ChartGUIFXMLController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@mainguifxml.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <LineChart fx:id="chart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" tickLabelFill="#fa26a0">
+                     <tickLabelFont>
+                        <Font name="Calibri Bold" size="13.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" tickLabelFill="#fa26a0">
+                     <tickLabelFont>
+                        <Font name="Calibri Bold" size="13.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+              </yAxis>
+            </LineChart>
+            <HBox prefHeight="40.0" prefWidth="200.0" translateY="63.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Back" stylesheets="@BackButtonStyle.css" text="Back">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="students" onAction="#loadChart" prefWidth="150.0" promptText="STUDENTS" styleClass="combo-box" stylesheets="@ComboBoxStyle.css" translateX="72.0" />
+                  <ComboBox fx:id="atrributes" onAction="#loadChart" prefWidth="150.0" promptText="Atrribute" styleClass="combo-box" stylesheets="@ComboBoxStyle.css" translateX="92.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
